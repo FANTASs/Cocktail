@@ -1,0 +1,15 @@
+<div class="input-group wrapper custom_border">
+  <div class="form-check filter">
+    <div *ngFor="let name of cocktailNames">
+      <input class="checkbox" type="checkbox"
+             (change)="changeCheckbox(name)"
+             [checked]="true"
+             [id]="name"
+      >
+      <label [for]="name">{{name}}</label>
+    </div>
+    <button class="custom_button" (click)="getCocktails()">
+      <span class="apply">APPLY</span>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.wrapper {
+  align-items: center;
+
+  .filter {
+    padding-top: 30px;
+    max-width: 90%;
+
+    .checkbox {
+      margin-right: 5px;
+      max-width: 90%;
+    }
+
+    .custom_button {
+      background: #4E4E4E;
+      border-radius: 10px;
+      width: 180px;
+      max-width: 90%;
+      height: 39px;
+
+      .apply {
+        color: #FFFFFF;
+      }
+    }
+  }
+}

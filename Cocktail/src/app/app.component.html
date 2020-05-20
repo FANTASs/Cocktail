@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="row">
+  <div class="col-md-2" style="border-right: 1px solid #D0D0D0;">
+    <app-filter (onClick)="onClicked($event)"></app-filter>
+  </div>
+
+  <div class="col-md-10 custom_border">
+    <div *ngFor="let name of cocktailNames; let i = index" class="row pt-30">
+
+      <div class="cocktail_name">
+        {{name}}
+      </div>
+      <div *ngFor="let cocktail of cocktails[i]" class="col-md-five">
+        <div>
+          <img class="img" src="{{cocktail.strDrinkThumb}}">
+        </div>
+        <div class="cocktail">{{cocktail.strDrink}}</div>
+      </div>
+
+    </div>
+  </div>
+</div>
